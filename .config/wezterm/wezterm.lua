@@ -34,6 +34,16 @@ config.freetype_load_flags = "NO_HINTING"
 config.cell_width = 0.9
 
 config.color_scheme = "rose-pine"
+
+-- Override specific colors
+config.colors = {
+	-- Override background color
+	background = "#000000", -- Replace with your desired color
+
+	-- Override selection background color
+	-- selection_bg = '#444444', -- Replace with your desired color
+}
+
 config.enable_tab_bar = false
 
 config.window_padding = {
