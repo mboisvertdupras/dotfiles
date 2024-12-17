@@ -5,15 +5,13 @@ return {
     palette = {
       main = {
         base = "#000000",
+        overlay = "#191724",
       },
     },
     highlight_groups = {
       FlashLabel = { fg = "base", bg = "leaf", inherit = false },
       CurSearch = { fg = "text", bg = "leaf", blend = 20, inherit = false },
       Search = { fg = "text", bg = "leaf", blend = 20, inherit = false },
-
-      StatusLine = { fg = "love", bg = "love", blend = 10 },
-      StatusLineNC = { fg = "subtle", bg = "surface" },
 
       TelescopeBorder = { fg = "overlay", bg = "overlay" },
       TelescopeNormal = { fg = "subtle", bg = "overlay" },

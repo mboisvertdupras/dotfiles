@@ -11,6 +11,4 @@ return {
       padding = 5,
     },
   },
-  -- Optional dependencies
-  dependencies = { "nvim-tree/nvim-web-devicons" },
 }

@@ -5,7 +5,7 @@ return {
     opts = {
       quiet = true,
       formatters_by_ft = {
-        php = { "pint", "php_cs_fixer" },
+        php = { "pint" },
         vue = { "volar", "eslint" },
         javascript = { "eslint" },
         javascriptreact = { "eslint" },
