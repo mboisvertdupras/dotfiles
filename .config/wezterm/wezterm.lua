@@ -12,7 +12,6 @@ config.foreground_text_hsb = {
 }
 
 config.keys = {
-	-- Rebind OPT-Left, OPT-Right as ALT-b, ALT-f respectively to match Terminal.app behavior
 	{
 		key = "LeftArrow",
 		mods = "OPT",
@@ -38,10 +37,10 @@ config.color_scheme = "rose-pine"
 -- Override specific colors
 config.colors = {
 	-- Override background color
-	background = "#000000", -- Replace with your desired color
+	background = "#000000",
 
 	-- Override selection background color
-	-- selection_bg = '#444444', -- Replace with your desired color
+	-- selection_bg = '#444444',
 }
 
 config.enable_tab_bar = false
@@ -61,6 +60,10 @@ end)
 wezterm.on("gui-attached", function()
 	local tab, pane, window = mux.spawn_window(cmd or {})
 	window:gui_window():toggle_fullscreen()
+end)
+
+wezterm.on("window-config-reloaded", function(window)
+	window:toggle_fullscreen()
 end)
 
 config.native_macos_fullscreen_mode = true
