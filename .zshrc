@@ -54,6 +54,7 @@ alias cat='bat --paging=never --theme=Dracula'
 
 # AI Tools
 alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model anthropic/claude-3-5-sonnet-20241022 --dark-mode'
+alias arc='aider --architect --editor-model anthropic/claude-3-5-sonnet-20241022 --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model anthropic/claude-3-5-sonnet-20241022 --dark-mode'
 
 ###################
 # Shell Extensions
