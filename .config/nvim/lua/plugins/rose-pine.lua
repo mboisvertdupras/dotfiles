@@ -7,6 +7,10 @@ return {
         base = "#000000",
         overlay = "#191724",
       },
+      moon = {
+        base = "#000000",
+        overlay = "#191724",
+      },
     },
     highlight_groups = {
       FlashLabel = { fg = "base", bg = "leaf", inherit = false },
@@ -25,6 +29,10 @@ return {
 
       TelescopePromptNormal = { fg = "text", bg = "surface" },
       TelescopePromptBorder = { fg = "surface", bg = "surface" },
+
+      SnacksIndent = { fg = "overlay" },
+
+      ColorColumn = { bg = "overlay" },
     },
   },
 }

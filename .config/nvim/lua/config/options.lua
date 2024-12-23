@@ -4,5 +4,6 @@
 
 vim.g.lazyvim_php_lsp = "intelephense"
 vim.g.root_spec = { "cwd" }
+vim.g.snacks_animate = false
 
 vim.opt.colorcolumn = "80"
