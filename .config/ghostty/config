@@ -1,0 +1,11 @@
+theme = rose-pine-moon
+
+background = 000000
+
+font-family = "TX-02"
+font-thicken = true
+
+window-padding-x = 0
+window-padding-y = 0
+
+fullscreen = true
