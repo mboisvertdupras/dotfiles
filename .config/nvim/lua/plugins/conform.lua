@@ -9,6 +9,7 @@ return {
         vue = { "volar", "eslint" },
         javascript = { "eslint" },
         javascriptreact = { "eslint" },
+        blade = { "blade-formatter" },
       },
     },
   },

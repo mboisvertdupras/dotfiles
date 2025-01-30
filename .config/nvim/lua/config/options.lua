@@ -7,3 +7,4 @@ vim.g.root_spec = { "cwd" }
 vim.g.snacks_animate = false
 
 vim.opt.colorcolumn = "80"
+vim.opt.fillchars = { eob = "~" }

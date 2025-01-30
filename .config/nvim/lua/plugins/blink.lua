@@ -10,6 +10,6 @@ return {
       -- ["<Up>"] = { "scroll_documentation_up", "fallback" },
       -- ["<Down>"] = { "scroll_documentation_down", "fallback" },
     },
-    completion = { list = { selection = "manual" } },
+    completion = { list = { selection = { preselect = false, auto_insert = false } } },
   },
 }
