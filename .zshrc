@@ -44,6 +44,7 @@ export GPG_TTY=$(tty)
 # Navigation
 alias sites='cd ~/Sites'
 alias cd='z'
+alias lzd='lazydocker'
 
 # Development
 alias art='php artisan'
@@ -51,6 +52,8 @@ alias lg='lazygit'
 alias vim='nvim'
 alias nvf='neovide --fork'
 alias cat='bat --paging=never --theme=Dracula'
+alias dcd="docker-compose down"
+alias dcu="docker-compose up -d"
 
 # AI Tools
 alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model anthropic/claude-3-5-sonnet-20241022 --dark-mode'
