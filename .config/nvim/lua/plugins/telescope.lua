@@ -1,6 +1,6 @@
 return {
   "telescope.nvim",
-  enabled = true,
+  enabled = false,
   dependencies = {
     "nvim-telescope/telescope-fzf-native.nvim",
     "nvim-telescope/telescope-live-grep-args.nvim",
