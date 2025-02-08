@@ -5,7 +5,6 @@ return {
     require("nvim-treesitter.install").update({ with_sync = true })
   end,
   dependencies = {
-    { "nvim-treesitter/playground", cmd = "TSPlaygroundToggle" },
     {
       "JoosepAlviste/nvim-ts-context-commentstring",
       opts = {
@@ -14,6 +13,9 @@ return {
             return "{{-- %s --}}"
           end
         end,
+        context_commentstring = {
+          enable_autocmd = false, -- Required for Blade override
+        },
       },
     },
     "nvim-treesitter/nvim-treesitter-textobjects",
@@ -79,6 +81,7 @@ return {
   },
   config = function(_, opts)
     require("nvim-treesitter.configs").setup(opts)
+    require("ts_context_commentstring").setup({})
 
     local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
     parser_config.blade = {
@@ -89,18 +92,14 @@ return {
       },
       filetype = "blade",
     }
-    vim.filetype.add({
-      pattern = {
-        [".*%.blade%.php"] = "blade",
-      },
-    })
-    require("ts_context_commentstring").setup({})
-    vim.g.skip_ts_context_commentstring_module = true
 
     vim.filetype.add({
       pattern = {
         [".*%.blade%.php"] = "blade",
       },
+      priority = 1000,
     })
+
+    vim.g.skip_ts_context_commentstring_module = true
   end,
 }

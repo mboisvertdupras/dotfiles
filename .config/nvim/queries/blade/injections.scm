@@ -6,7 +6,8 @@
 ; tree-sitter-comment injection
 ; if available
 ((comment) @injection.content
- (#set! injection.language "comment"))
+ (#set! injection.language "comment")
+ (#set! injection.include-children))
 
 ; could be bash or zsh
 ; or whatever tree-sitter grammar you have.
