@@ -6,7 +6,17 @@ return {
       quiet = true,
       formatters_by_ft = {
         -- html = { "prettier" },
-        php = { "phpcbf" },
+        php = function(bufnr)
+          local content = table.concat(vim.api.nvim_buf_get_lines(bufnr, 0, -1, false), "\n")
+          -- Check for HTML tags in first 50 lines
+          for i = 0, math.min(49, vim.api.nvim_buf_line_count(bufnr) - 1) do
+            local line = vim.api.nvim_buf_get_lines(bufnr, i, i+1, false)[1]
+            if line:match("<%a+") then
+              return { "phpcbf" }
+            end
+          end
+          return { "pint" }
+        end,
         vue = { "volar", "eslint" },
         javascript = { "eslint" },
         javascriptreact = { "eslint" },
@@ -16,6 +26,10 @@ return {
         phpcbf = {
           command = "phpcbf",
           args = { "--standard=PSR12", "$FILENAME" },
+        },
+        pint = {
+          command = "pint",
+          args = { "$FILENAME" },
         },
       },
       notify_on_error = true,
