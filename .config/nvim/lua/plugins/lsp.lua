@@ -27,18 +27,20 @@ return {
           },
         },
         phpactor = {
-          enabled = false,
+          enabled = true,
           init_options = {
             ["indexer.stub_paths"] = {
-              "/Users/marc/.composer/vendor/php-stubs/wordpress-stubs",
-              "/Users/marc/.composer/vendor/php-stubs/woocommerce-stubs",
-              "/Users/marc/.composer/vendor/php-stubs/acf-pro-stubs",
+              "file:///Users/marc/.composer/vendor/php-stubs/wordpress-stubs",
+              "file:///Users/marc/.composer/vendor/php-stubs/woocommerce-stubs",
+              "file:///Users/marc/.composer/vendor/php-stubs/acf-pro-stubs",
+              "%project_root%/.ide_helpers/",
             },
+            ["worse_reflection.stub_dir"] = "file:///Users/marc/.composer/vendor/php-stubs",
             ["language_server_worse_reflection.inlay_hints.enable"] = true,
           },
         },
         intelephense = {
-          enable = true,
+          enable = false,
           init_options = {
             licenceKey = vim.fn.getenv("INTELEPHENSE_LICENCE_KEY") or "00000000",
           },
