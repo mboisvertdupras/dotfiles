@@ -56,8 +56,8 @@ alias dcd="docker-compose down"
 alias dcu="docker-compose up -d"
 
 # AI Tools
-alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model anthropic/claude-3-5-sonnet-20241022 --dark-mode'
-alias arc='aider --architect --model openrouter/deepseek/deepseek-r1 --editor-model anthropic/claude-3-5-sonnet-20241022 --cache-prompts --restore-chat-history --no-attribute-author --no-attribute-committer'
+alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model anthropic/claude-3-5-sonnet-20241022'
+alias arc='aider --architect --model openrouter/deepseek/deepseek-r1 --editor-model anthropic/claude-3-7-sonnet-20250219 --cache-prompts --restore-chat-history --no-attribute-author --no-attribute-committer --notifications'
 
 ###################
 # Shell Extensions
