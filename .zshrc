@@ -3,6 +3,8 @@
 ###################
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/marc/.local/bin:$PATH"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 ###################
 # Development Tools
@@ -51,13 +53,12 @@ alias art='php artisan'
 alias lg='lazygit'
 alias vim='nvim'
 alias nvf='neovide --fork'
-alias cat='bat --paging=never --theme=Dracula'
 alias dcd="docker-compose down"
 alias dcu="docker-compose up -d"
 
 # AI Tools
-alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model anthropic/claude-3-5-sonnet-20241022 --dark-mode'
-alias arc='aider --architect --model openrouter/deepseek/deepseek-r1 --editor-model anthropic/claude-3-5-sonnet-20241022 --cache-prompts --restore-chat-history --no-attribute-author --no-attribute-committer'
+alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model gemini/gemini-2.5-pro-preview-03-25'
+alias arc='aider --architect --model openrouter/deepseek/deepseek-r1 --editor-model anthropic/claude-3-7-sonnet-20250219 --cache-prompts --restore-chat-history --no-attribute-author --no-attribute-committer --notifications'
 
 ###################
 # Shell Extensions

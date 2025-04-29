@@ -1,0 +1,22 @@
+{
+  "agents": {
+    "coder": {
+      "model": "gemini-2.5"
+    },
+    "task": {
+      "model": "gemini-2.5"
+    },
+    "title": {
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "lsp": {
+    "php": {
+      "disabled": false,
+      "command": "/Users/marc/.local/share/nvim/mason/bin/intelephense",
+      "args": ["--stdio"]
+    }
+  },
+  "debug": false,
+  "debugLSP": false
+}
