@@ -10,13 +10,18 @@
       "model": "gemini-2.5-flash"
     }
   },
+  "debug": false,
+  "debugLSP": false,
   "lsp": {
     "php": {
-      "disabled": false,
+      "args": [
+        "--stdio"
+      ],
       "command": "/Users/marc/.local/share/nvim/mason/bin/intelephense",
-      "args": ["--stdio"]
+      "disabled": false
     }
   },
-  "debug": false,
-  "debugLSP": false
+  "tui": {
+    "theme": "catppuccin"
+  }
 }
