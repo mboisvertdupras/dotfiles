@@ -76,3 +76,4 @@ eval "$(zoxide init zsh)"
 if [ -f "$HOME/.secrets" ]; then
     source "$HOME/.secrets"
 fi
+alias claude="/Users/marc/.claude/local/claude"
