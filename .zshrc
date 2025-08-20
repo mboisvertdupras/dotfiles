@@ -32,6 +32,9 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Default Editor
 export EDITOR=nvim
+# Tunnelto
+export TUNNELTO_INSTALL="/Users/marc/.tunnelto"
+export PATH="$TUNNELTO_INSTALL/bin:$PATH"
 
 ###################
 # Shell Configuration
@@ -82,3 +85,5 @@ if [ -f "$HOME/.secrets" ]; then
 fi
 
 alias claude="/Users/marc/.claude/local/claude"
+# opencode
+export PATH=/Users/marc/.opencode/bin:$PATH
