@@ -30,6 +30,9 @@ export PATH="$PNPM_HOME:$PATH"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# Default Editor
+export EDITOR=nvim
+
 ###################
 # Shell Configuration
 ###################
@@ -47,6 +50,7 @@ export GPG_TTY=$(tty)
 alias sites='cd ~/Sites'
 alias cd='z'
 alias lzd='lazydocker'
+alias yz='yazi'
 
 # Development
 alias art='php artisan'
@@ -76,4 +80,5 @@ eval "$(zoxide init zsh)"
 if [ -f "$HOME/.secrets" ]; then
     source "$HOME/.secrets"
 fi
+
 alias claude="/Users/marc/.claude/local/claude"

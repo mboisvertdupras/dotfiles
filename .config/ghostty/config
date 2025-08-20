@@ -1,13 +1,14 @@
-theme = mellow
+theme = catppuccin-frappe
 
-background = 000000
+background = 2A2C35
 
-font-family = "TX-02"
-font-family-italic = "Cascadia Code"
+font-family = "Terminess Nerd Font Mono"
+# font-family-italic = "Cascadia Code"
 font-thicken = true
-font-feature = "calt, ss01"
+# font-feature = "calt, ss01"
+# font-size = 13.5
 
 window-padding-x = 0
 window-padding-y = 0
 
-fullscreen = true
+maximize = true
