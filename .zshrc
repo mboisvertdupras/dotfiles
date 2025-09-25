@@ -46,6 +46,9 @@ unset MAILCHECK
 # GPG
 export GPG_TTY=$(tty)
 
+# Disable Bun Agent Rules
+export BUN_AGENT_RULE_DISABLED=true
+
 ###################
 # Aliases
 ###################
