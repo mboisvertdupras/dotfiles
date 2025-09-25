@@ -1,11 +1,11 @@
 return {
   "dgox16/oldworld.nvim",
   lazy = false,
-  enabled = false,
+  enabled = true,
   priority = 1000,
   config = function()
     local config = {
-      -- variant = "oled",
+      variant = "oled",
       styles = {
         comments = { italic = true },
       },
