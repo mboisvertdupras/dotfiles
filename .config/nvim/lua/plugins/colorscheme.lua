@@ -6,12 +6,12 @@ return {
       transparent_background = true,
     },
   },
-  -- lazy = false,
-  -- name = "catppuccin",
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "catppuccin",
-  --   },
-  -- },
+  lazy = false,
+  name = "catppuccin",
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
 }

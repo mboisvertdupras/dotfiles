@@ -1,7 +1,7 @@
 return {
   "dgox16/oldworld.nvim",
   lazy = false,
-  enabled = true,
+  enabled = false,
   priority = 1000,
   config = function()
     local config = {
