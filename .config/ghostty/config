@@ -1,4 +1,4 @@
-theme = Catppuccin Frappe
+theme = light:Catppuccin Latte,dark:Catppuccin Frappe
 
 background = 2A2C35
 
@@ -13,6 +13,9 @@ window-padding-y = 0
 
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
+
+background-opacity = 0.9
+background-blur = true
 
 maximize = true
 
