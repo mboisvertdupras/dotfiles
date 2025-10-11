@@ -1,6 +1,6 @@
 theme = light:Catppuccin Latte,dark:Catppuccin Frappe
 
-background = 2A2C35
+# background = 2A2C35
 
 font-family = "Terminess Nerd Font Mono"
 # font-family-italic = "Cascadia Code"
