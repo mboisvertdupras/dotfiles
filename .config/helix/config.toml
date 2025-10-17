@@ -1,0 +1,6 @@
+[theme]
+dark = "catppuccin_frappe"
+light = "github_light"
+
+[editor]
+rulers = [80]
