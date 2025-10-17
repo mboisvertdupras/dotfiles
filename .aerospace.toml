@@ -65,7 +65,7 @@ automatically-unhide-macos-hidden-apps = false
 [mode.main.binding]
 # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
     alt-enter = '''exec-and-forget osascript -e '
-    tell application "Terminal"
+    tell application "Ghostty"
         do script
         activate
     end tell'
@@ -75,7 +75,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-h =         'focus --boundaries-action wrap-around-the-workspace left'
     alt-j =         'focus --boundaries-action wrap-around-the-workspace down'
     alt-k =         'focus --boundaries-action wrap-around-the-workspace up'
-    alt-l = 'focus --boundaries-action wrap-around-the-workspace right'
+    alt-l =         'focus --boundaries-action wrap-around-the-workspace right'
 
     alt-shift-h = ['join-with left', 'mode main']
     alt-shift-j = ['join-with down', 'mode main']
