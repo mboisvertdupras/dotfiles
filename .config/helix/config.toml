@@ -4,3 +4,7 @@ light = "github_light"
 
 [editor]
 rulers = [80]
+line-number = "relative"
+
+[editor.file-picker]
+hidden = false
