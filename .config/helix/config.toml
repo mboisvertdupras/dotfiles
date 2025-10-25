@@ -1,6 +1,6 @@
 [theme]
-dark = "catppuccin_frappe"
-light = "github_light"
+dark = "autumn_night"
+light = "emacs"
 
 [editor]
 rulers = [80]
