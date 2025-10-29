@@ -1,10 +1,14 @@
-[theme]
-dark = "autumn_night"
-light = "emacs"
+theme = "emacs"
 
 [editor]
 rulers = [80]
 line-number = "relative"
+color-modes = true
+
+[editor.cursor-shape]
+normal = 'block'
+insert = 'bar'
+select = 'underline'
 
 [editor.file-picker]
 hidden = false

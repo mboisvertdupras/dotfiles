@@ -5,8 +5,8 @@ theme = light:Catppuccin Latte,dark:Catppuccin Frappe
 font-family = "TX-02"
 # font-family-italic = "Cascadia Code"
 font-thicken = true
-# font-feature = "calt, ss01"
-font-size = 13
+font-feature = "-calt, ss01"
+# font-size = 13
 
 window-padding-x = 0
 window-padding-y = 0
