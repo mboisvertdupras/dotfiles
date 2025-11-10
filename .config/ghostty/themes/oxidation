@@ -1,0 +1,34 @@
+# oxidation - A soft, pastel theme inspired by oxidation colors
+# Author: Marc
+
+# Background and foreground
+background = #061011
+foreground = #E7E7E8
+
+# Cursor
+cursor-color = #C6A5EA
+cursor-text = #061011
+
+# Selection
+selection-background = #33344A
+selection-foreground = #E7E7E8
+
+# Normal colors (0-7)
+palette = 0=#061011
+palette = 1=#F39EAE
+palette = 2=#68D9A7
+palette = 3=#EDD5A6
+palette = 4=#9DAFFA
+palette = 5=#C6A5EA
+palette = 6=#A7E0C8
+palette = 7=#E7E7E8
+
+# Bright colors (8-15)
+palette = 8=#565F89
+palette = 9=#F39EAE
+palette = 10=#68D9A7
+palette = 11=#EDD5A6
+palette = 12=#9DAFFA
+palette = 13=#C6A5EA
+palette = 14=#A7E0C8
+palette = 15=#E7E7E8

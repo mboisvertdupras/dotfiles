@@ -1,0 +1,131 @@
+# Author: Marc
+# A soft, pastel theme inspired by oxidation colors
+
+# UI Elements
+"ui.background" = { bg = "background" }
+"ui.text" = { fg = "white" }
+"ui.text.focus" = { fg = "white", bg = "selection", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "gray" }
+"ui.cursor" = { fg = "background", bg = "white" }
+"ui.cursor.primary" = { fg = "background", bg = "magenta" }
+"ui.cursor.match" = { fg = "yellow", modifiers = ["underlined"] }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection_primary" }
+"ui.linenr" = { fg = "gray_dark" }
+"ui.linenr.selected" = { fg = "white", modifiers = ["bold"] }
+"ui.statusline" = { fg = "white", bg = "statusline" }
+"ui.statusline.inactive" = { fg = "gray", bg = "statusline" }
+"ui.statusline.normal" = { fg = "background", bg = "blue" }
+"ui.statusline.insert" = { fg = "background", bg = "green" }
+"ui.statusline.select" = { fg = "background", bg = "magenta" }
+"ui.cursorline" = { bg = "cursorline" }
+"ui.menu" = { fg = "white", bg = "menu" }
+"ui.menu.selected" = { fg = "white", bg = "selection", modifiers = ["bold"] }
+"ui.popup" = { fg = "white", bg = "menu" }
+"ui.window" = { fg = "gray_dark" }
+"ui.help" = { fg = "white", bg = "menu" }
+"ui.virtual.whitespace" = { fg = "gray_dark" }
+"ui.virtual.ruler" = { bg = "cursorline" }
+"ui.virtual.indent-guide" = { fg = "gray_dark" }
+
+# Syntax Highlighting
+"comment" = { fg = "gray", modifiers = ["italic"] }
+"comment.line" = { fg = "gray", modifiers = ["italic"] }
+"comment.block" = { fg = "gray", modifiers = ["italic"] }
+
+"constant" = { fg = "yellow" }
+"constant.numeric" = { fg = "yellow" }
+"constant.character" = { fg = "green" }
+"constant.builtin" = { fg = "yellow" }
+
+"string" = { fg = "green" }
+"string.regexp" = { fg = "yellow" }
+"string.special" = { fg = "green" }
+
+"keyword" = { fg = "magenta" }
+"keyword.control" = { fg = "magenta" }
+"keyword.control.import" = { fg = "magenta" }
+"keyword.control.return" = { fg = "magenta" }
+"keyword.function" = { fg = "magenta" }
+"keyword.operator" = { fg = "magenta" }
+"keyword.storage" = { fg = "magenta" }
+"keyword.storage.type" = { fg = "magenta" }
+"keyword.storage.modifier" = { fg = "magenta" }
+
+"operator" = { fg = "pale_green" }
+
+"punctuation" = { fg = "white" }
+"punctuation.bracket" = { fg = "white" }
+"punctuation.delimiter" = { fg = "white" }
+
+"variable" = { fg = "white" }
+"variable.builtin" = { fg = "blue" }
+"variable.parameter" = { fg = "yellow" }
+"variable.other.member" = { fg = "blue" }
+
+"function" = { fg = "blue" }
+"function.builtin" = { fg = "blue" }
+"function.method" = { fg = "blue" }
+"function.macro" = { fg = "magenta" }
+
+"type" = { fg = "yellow" }
+"type.builtin" = { fg = "red" }
+"type.parameter" = { fg = "red" }
+
+"constructor" = { fg = "yellow" }
+
+"attribute" = { fg = "magenta" }
+"label" = { fg = "magenta" }
+
+"namespace" = { fg = "blue" }
+"module" = { fg = "blue" }
+
+"special" = { fg = "magenta" }
+
+# Markup
+"markup.heading" = { fg = "magenta", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "green" }
+"markup.quote" = { fg = "gray" }
+"markup.raw" = { fg = "green" }
+"markup.list" = { fg = "magenta" }
+
+# Diagnostics
+"error" = { fg = "red" }
+"warning" = { fg = "yellow" }
+"info" = { fg = "blue" }
+"hint" = { fg = "gray" }
+
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "gray", style = "curl" } }
+
+# Diff
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "yellow" }
+
+[palette]
+# Base colors from screenshot
+magenta = "#C6A5EA"
+yellow = "#EDD5A6"
+pale_green = "#A7E0C8"
+white = "#E7E7E8"
+gray = "#A1A4A5"
+blue = "#9DAFFA"
+red = "#F39EAE"
+green = "#68D9A7"
+
+# Additional colors for UI
+background = "#061011"
+foreground = "#E7E7E8"
+selection = "#2C2E3E"
+selection_primary = "#33344A"
+statusline = "#16161E"
+menu = "#24283B"
+cursorline = "#1F202E"
+gray_dark = "#565F89"
