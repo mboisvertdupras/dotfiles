@@ -7,7 +7,7 @@
 "ui.text.focus" = { fg = "white", bg = "selection", modifiers = ["bold"] }
 "ui.text.inactive" = { fg = "gray" }
 "ui.cursor" = { fg = "background", bg = "white" }
-"ui.cursor.primary" = { fg = "background", bg = "magenta" }
+"ui.cursor.primary" = { fg = "background", bg = "white" }
 "ui.cursor.match" = { fg = "yellow", modifiers = ["underlined"] }
 "ui.selection" = { bg = "selection" }
 "ui.selection.primary" = { bg = "selection_primary" }
@@ -81,6 +81,10 @@
 "module" = { fg = "blue" }
 
 "special" = { fg = "magenta" }
+
+# Tags (HTML, XML, etc.)
+"tag" = { fg = "red" }
+"tag.builtin" = { fg = "red" }
 
 # Markup
 "markup.heading" = { fg = "magenta", modifiers = ["bold"] }

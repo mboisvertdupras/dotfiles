@@ -6,7 +6,7 @@ background = #061011
 foreground = #E7E7E8
 
 # Cursor
-cursor-color = #C6A5EA
+cursor-color = #E7E7E8
 cursor-text = #061011
 
 # Selection
