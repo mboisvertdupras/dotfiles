@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ###################
 # Path Configuration
 ###################
@@ -32,6 +39,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Default Editor
 export EDITOR=nvim
+# 
 # Tunnelto
 export TUNNELTO_INSTALL="/Users/marc/.tunnelto"
 export PATH="$TUNNELTO_INSTALL/bin:$PATH"
@@ -62,13 +70,8 @@ alias yz='yazi'
 alias art='php artisan'
 alias lg='lazygit'
 alias vim='nvim'
-alias nvf='neovide --fork'
 alias dcd="docker-compose down"
 alias dcu="docker-compose up -d"
-
-# AI Tools
-alias acc='aider --no-attribute-author --no-attribute-committer --cache-prompts --no-stream --restore-chat-history --model gemini/gemini-2.5-pro-preview-03-25'
-alias arc='aider --architect --model openrouter/deepseek/deepseek-r1 --editor-model anthropic/claude-3-7-sonnet-20250219 --cache-prompts --restore-chat-history --no-attribute-author --no-attribute-committer --notifications'
 
 ###################
 # Shell Extensions
@@ -76,9 +79,6 @@ alias arc='aider --architect --model openrouter/deepseek/deepseek-r1 --editor-mo
 
 # ZSH plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Starship prompt
-eval "$(starship init zsh)"
 
 # Zoxide
 eval "$(zoxide init zsh)"
@@ -90,3 +90,7 @@ fi
 alias claude="/Users/marc/.claude/local/claude"
 # opencode
 export PATH=/Users/marc/.opencode/bin:$PATH
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
