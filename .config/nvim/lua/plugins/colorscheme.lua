@@ -8,16 +8,16 @@ return {
   },
   {
     "catppuccin/nvim",
+    enabled = true,
     lazy = false,
     opts = {
-      flavour = "frappe",
       transparent_background = true,
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }

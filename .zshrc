@@ -19,9 +19,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # PHP & Composer
 export PATH=~/.composer/vendor/bin:$PATH
-export PATH="/usr/local/opt/php@8.2/sbin:$PATH"
-export PATH="/usr/local/opt/php@8.2/bin:$PATH"
-export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Node.js Package Managers
 # Bun
@@ -87,7 +84,6 @@ if [ -f "$HOME/.secrets" ]; then
     source "$HOME/.secrets"
 fi
 
-alias claude="/Users/marc/.claude/local/claude"
 # opencode
 export PATH=/Users/marc/.opencode/bin:$PATH
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
