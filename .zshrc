@@ -50,6 +50,12 @@ unset MAILCHECK
 
 # GPG
 export GPG_TTY=$(tty)
+if command -v gpgconf >/dev/null 2>&1; then
+    gpgconf --launch gpg-agent >/dev/null 2>&1
+fi
+if command -v gpg-connect-agent >/dev/null 2>&1; then
+    gpg-connect-agent updatestartuptty /bye >/dev/null
+fi
 
 # Disable Bun Agent Rules
 export BUN_AGENT_RULE_DISABLED=true
