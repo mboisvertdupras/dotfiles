@@ -1,0 +1,3 @@
+- [Dotfiles layout](dotfiles-layout.md) — dotfiles in ~/.dotfiles (git repo), symlinked into home; edit the real target not the symlink
+- [Config style preference](config-style-preference.md) — prefers readable, commented config over compressed one-liners
+- [SEO skill collision](seo-skill-collision.md) — disabled personal `seo` skill (removed ~/.claude/skills/seo symlink) so /seo routes to claude-seo plugin
