@@ -1,9 +1,9 @@
 {
   "ai": {
-    "model": "google/gemini-2.5-flash",
+    "model": "openai/gpt-6-luna",
     "temperature": 0.2,
     "maxOutputTokens": 8192,
-    "timeoutMs": 20000
+    "timeoutMs": 60000
   },
   "commit": {
     "style": "conventional",

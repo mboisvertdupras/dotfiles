@@ -1,0 +1,104 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "relative_line_numbers": "enabled",
+  "vim_mode": false,
+  "prettier": {
+    "allowed": true,
+  },
+  "languages": {
+    "Blade": {
+      "language_servers": [
+        "tailwindcss-language-server",
+        "emmet-language-server",
+      ],
+      "formatter": {
+        "external": {
+          "command": "blade-formatter",
+          "arguments": [
+            "--stdin",
+            "--sort-html-attributes",
+            "--sort-tailwindcss-classes",
+            "--no-php-syntax-check",
+            "--write",
+          ],
+        },
+      },
+    },
+    "JavaScript": {
+      "prettier": {
+        "use": true,
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+    "PHP": {
+      "language_servers": ["phpactor", "!intelephense", "!phptools", "..."],
+      "formatter": {
+        "external": {
+          "command": "./vendor/bin/pint",
+          "arguments": ["--silent", "--stdin-filename", "{buffer_path}"],
+        },
+      },
+    },
+  },
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "blade": "html",
+        },
+      },
+    },
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "agent_ui_font_size": 14.0,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": "Berkeley Mono",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
+  "wrap_guides": [80],
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "system",
+    "light": "Vercel Light",
+    "dark": "Vercel Dark",
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "errors",
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true,
+  },
+}

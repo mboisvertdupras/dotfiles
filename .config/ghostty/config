@@ -12,6 +12,10 @@ font-family = "Geist Mono"
 window-padding-x = 0
 window-padding-y = 0
 
+# Always open new windows in $HOME instead of inheriting the launch/focus dir
+working-directory = home
+window-inherit-working-directory = false
+
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
 
