@@ -15,6 +15,7 @@
   "experimental": {
     "todo": true,
     "subagent_depth": 2,
-    "artifacts": true
+    "artifacts": true,
+    "background_compaction": true
   }
 }
