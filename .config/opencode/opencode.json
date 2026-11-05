@@ -1,5 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "opencode-memory-extract": { "model": "claude-agent/sonnet#medium", "steps": 20 },
+    "opencode-memory-recall":  { "model": "claude-agent/haiku#high" },
+    "opencode-memory-dream":   { "model": "claude-agent/opus#high" }
+  },
   "mcp": {
     "servers": {
       "chrome-devtools": {
@@ -17,5 +22,13 @@
     "subagent_depth": 2,
     "artifacts": true,
     "background_compaction": true
-  }
+  },
+  "worktree": {
+    "directory": ".opencode/trees",
+  },
+  "plugins": [
+    "pstack-opencode",
+    "opencode-claude-memory"
+  ]
 }
+

@@ -1,2 +1,4 @@
 .DS_Store
 .tmux/plugins
+.config/opencode/service.json
+.config/opencode/package-lock.json

@@ -1,21 +1,12 @@
 - Don't implement code changes directly in the main loop.
 - Delegate all coding tasks (writing, editing, refactoring, test authoring) to a
   subagent.
-- Fable acts as an optional advisor and verifier only. Never delegate any coding tasks to Fable.
 - Trivial mechanical edits (single-line fixes, config values) may be done
   directly if spawning an agent is clearly disproportionate.
-- Before sending a brief, check it: no `--parallel` or full suite; no Co-Authored-By or
-  other attribution; tests chosen by
-  grepping for what changed; in an isolated worktree, no `git checkout -B`/branch switching
-  (name the worktree after the branch instead).
 
 ## Session hygiene
 - Save a memory only for a rule or trap that matters in a future session. Never for
   session-scoped instructions, measurements, or facts the repo already records.
-
-## Code Style Rules
-- Don't write comments that restate what the code does; let names and structure carry it.
-  No placeholder or step-by-step breakdown comments in code you write.
 
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
 
