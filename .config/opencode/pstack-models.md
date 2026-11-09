@@ -16,6 +16,6 @@ reflect tooling: claude-agent/sonnet#high
 reflect judgment, divergent, synthesizer: claude-agent/opus#high
 arena runners: claude-agent/fable#high, opencode/gpt-6.1-sol#high
 arena cross-judge pool: opencode/gpt-6.1-sol#high, claude-agent/fable#high
-swarm workers: claude-agent/haiku#xhigh, openrouter/meta/muse-ember#max
+swarm workers: claude-agent/haiku#xhigh, opencode/muse-ember-1.0#max
 architect runners: claude-agent/fable#high, opencode/gpt-6-astra#high
 interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.1-sol#high
