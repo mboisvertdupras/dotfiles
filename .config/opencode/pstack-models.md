@@ -14,8 +14,8 @@ why investigators: opencode/gpt-6.1-sol#high
 why synthesizer: claude-agent/opus#medium
 reflect tooling: claude-agent/sonnet#high
 reflect judgment, divergent, synthesizer: claude-agent/opus#high
-arena runners: claude-agent/opus#high, opencode/gpt-6.1-sol#high, opencode/deepseek-v4.1-flash#max
+arena runners: claude-agent/fable#high, opencode/gpt-6.1-sol#high
 arena cross-judge pool: opencode/gpt-6.1-sol#high, claude-agent/fable#high
-swarm workers: claude-agent/haiku#xhigh
-architect runners: claude-agent/opus#high, opencode/gpt-6.1-sol#high, google/gemini-4-argon#high
-interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.1-sol#high, google/gemini-4-argon#high
+swarm workers: claude-agent/haiku#xhigh, openrouter/meta/muse-ember#max
+architect runners: claude-agent/fable#high, opencode/gpt-6-astra#high
+interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.1-sol#high
