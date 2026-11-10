@@ -10,12 +10,12 @@ judgment and prose: claude-agent/opus#high
 hardest tasks: claude-agent/opus#high
 how explorer: claude-agent/haiku#xhigh
 how explainer: claude-agent/opus#medium
-why investigators: opencode/gpt-6.1-sol#high
+why investigators: opencode/gpt-6.1-sol#high, opencode/gemini-4-carbon#high
 why synthesizer: claude-agent/opus#medium
-reflect tooling: claude-agent/sonnet#high
+reflect tooling: opencode/gpt-6.1-sol#xhigh
 reflect judgment, divergent, synthesizer: claude-agent/opus#high
-arena runners: claude-agent/fable#high, opencode/gpt-6.1-sol#high
-arena cross-judge pool: opencode/gpt-6.1-sol#high, claude-agent/fable#high
-swarm workers: claude-agent/haiku#xhigh, opencode/muse-ember-1.0#max
-architect runners: claude-agent/fable#high, opencode/gpt-6-astra#high
-interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.1-sol#high
+arena runners: claude-agent/claude-fable-5-2#high, opencode/gpt-6.1-sol#high, opencode/gemini-4-carbon#high
+arena cross-judge pool: opencode/gpt-6.1-sol#high, claude-agent/claude-fable-5-2#high, opencode/gemini-4-carbon#high
+swarm workers: claude-agent/haiku#xhigh
+architect runners: claude-agent/claude-fable-5-2#high, opencode/gpt-6-astra#high, opencode/gemini-4-carbon#high
+interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.1-sol#high, opencode/gemini-4-carbon#high
