@@ -2,14 +2,14 @@
   "$schema": "https://opencode.ai/config.json",
   "agents": {
     "opencode-memory-extract": {
-      "model": "claude-agent/claude-sonnet-5-5#medium",
+      "model": "claude-agent/sonnet#medium",
       "steps": 20
     },
     "opencode-memory-recall": {
-      "model": "claude-agent/claude-haiku-5-5#high"
+      "model": "claude-agent/haiku#high"
     },
     "opencode-memory-dream": {
-      "model": "claude-agent/claude-opus-5-5#high"
+      "model": "claude-agent/opus#high"
     }
   },
   "mcp": {
