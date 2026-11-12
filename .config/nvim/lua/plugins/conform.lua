@@ -2,10 +2,10 @@ return {
   {
     "stevearc/conform.nvim",
     event = "LspAttach",
-    opts = function()
+    opts = function(_, opts)
       local util = require("conform.util")
 
-      return {
+      return vim.tbl_deep_extend("force", opts, {
         quiet = true,
         formatters_by_ft = {
           -- html = { "prettier" },
@@ -27,7 +27,7 @@ return {
           },
         },
         notify_on_error = true,
-      }
+      })
     end,
   },
 }

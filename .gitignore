@@ -2,3 +2,9 @@
 .tmux/plugins
 .config/opencode/service.json
 .config/opencode/package-lock.json
+.config/opencode/package.json
+.config/opencode/bun.lock
+.config/opencode/node_modules
+.config/opencode/cache
+.config/opencode/plugins
+.config/opencode/settings.json
