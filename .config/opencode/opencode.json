@@ -14,14 +14,6 @@
   },
   "mcp": {
     "servers": {
-      "chrome-devtools": {
-        "type": "local",
-        "command": [
-          "npx",
-          "-y",
-          "chrome-devtools-mcp@latest"
-        ]
-      },
       "runpod": {
         "type": "remote",
         "url": "https://mcp.runpod.io/",
@@ -29,9 +21,17 @@
       }
     },
   },
+  "compaction": {
+    "buffer": 650000
+  },
+  "providers": {
+    "openai": {
+      "settings": { "compaction": { "type": "native" } }
+    }
+  },
   "experimental": {
     "todo": true,
-    "subagent_depth": 2,
+    "subagent_depth": 3,
     "artifacts": true,
     "background_compaction": true
   },
