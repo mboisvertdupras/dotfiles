@@ -32,5 +32,8 @@
   "experimental": {
     "new-designs": false,
     "client-mcp": false
-  }
+  },
+  "plugins": [
+    "opencode-autosuggestions"
+  ]
 }

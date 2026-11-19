@@ -7,13 +7,13 @@ feature, refactoring: claude-agent/sonnet#medium, claude-agent/opus#medium
 bug-fix: claude-agent/opus#medium, claude-agent/opus#high
 perf-issue: claude-agent/opus#high, claude-agent/fable#medium
 hillclimb: claude-agent/opus#high, claude-agent/fable#medium
-judgment and prose: claude-agent/opus#high
+judgment and prose: opencode/gemini-4-neon#high
 hardest tasks: claude-agent/fable#medium
-reflect tooling: opencode/gpt-6.1-sol#xhigh
+reflect tooling: opencode/gpt-6.2-sol#xhigh
 reflect judgment, divergent, synthesizer: claude-agent/opus#high
-arena runners: claude-agent/fable#high, opencode/gpt-6.1-sol#high
-arena cross-judge pool: claude-agent/fable#high, opencode/gpt-6.1-sol#high
+arena runners: claude-agent/fable#high, opencode/gpt-6.2-sol#high
+arena cross-judge pool: claude-agent/fable#high, opencode/gpt-6.2-sol#high
 swarm workers: claude-agent/sonnet#medium
-architect runners: claude-agent/fable#high, opencode/gpt-6.1-sol#high
-interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.1-sol#high
+architect runners: claude-agent/fable#high, opencode/gpt-6.2-sol#high
+interrogate reviewers: claude-agent/opus#high, opencode/gpt-6.2-sol#high
 no code: claude-agent/fable
